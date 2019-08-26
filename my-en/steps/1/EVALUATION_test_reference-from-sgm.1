@@ -1,0 +1,13 @@
+#!/bin/bash
+
+PATH="/home/thaesue/anaconda3/condabin:/home/thaesue/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin"
+cd /home/thaesue/smt_se/Data/model8/my-en
+echo 'starting at '`date`' on '`hostname`
+mkdir -p /home/thaesue/smt_se/Data/model8/my-en/evaluation
+
+mkdir -p /home/thaesue/smt_se/Data/model8/my-en/evaluation
+/home/thaesue/smt_se/mosesdecoder/scripts/ems/support/reference-from-sgm.perl /home/thaesue/smt_se/Data/data8/sgm/test.en.ref.sgm /home/thaesue/smt_se/Data/data8/sgm/test.my.src.sgm /home/thaesue/smt_se/Data/model8/my-en/evaluation/test.reference.txt.1
+
+
+echo 'finished at '`date`
+touch /home/thaesue/smt_se/Data/model8/my-en/steps/1/EVALUATION_test_reference-from-sgm.1.DONE

@@ -1,0 +1,4 @@
+INPUT = USED /home/thaesue/smt_se/Data/model8/my-en/tuning/moses.tuned.ini.1 /home/thaesue/smt_se/Data/model8/my-en/evaluation/test.input.tc.1 /home/thaesue/smt_se/Data/model8/my-en/evaluation/test.filtered.ini.1
+decoder = /home/thaesue/smt_se/mosesdecoder/bin/moses [1561376925]
+report-segmentation = yes
+decoder-settings = -search-algorithm 1 -cube-pruning-pop-limit 5000 -s 5000 -threads 4

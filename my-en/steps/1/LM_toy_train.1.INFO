@@ -1,0 +1,4 @@
+lm-training = /home/thaesue/smt_se/srilm/bin/i686-m64/ngram-count [1561094875]
+settings = -interpolate -kndiscount -unk
+order = 5
+INPUT = USED /home/thaesue/smt_se/Data/model8/my-en/lm/toy.truecased.1

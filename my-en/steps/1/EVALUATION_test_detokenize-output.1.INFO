@@ -1,0 +1,2 @@
+detokenizer = /home/thaesue/smt_se/mosesdecoder/scripts/tokenizer/detokenizer.perl -l en [1561038277]
+INPUT = USED /home/thaesue/smt_se/Data/model8/my-en/evaluation/test.truecased.1

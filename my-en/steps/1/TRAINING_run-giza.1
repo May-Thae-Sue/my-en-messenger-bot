@@ -1,0 +1,11 @@
+#!/bin/bash
+
+PATH="/home/thaesue/anaconda3/condabin:/home/thaesue/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin"
+cd /home/thaesue/smt_se/Data/model8/my-en
+echo 'starting at '`date`' on '`hostname`
+mkdir -p /home/thaesue/smt_se/Data/model8/my-en/training
+
+/home/thaesue/smt_se/mosesdecoder/scripts/training/train-model.perl -dont-zip -first-step 2 -last-step 2 -external-bin-dir /home/thaesue/smt_se/tools -f my -e en -alignment grow-diag-final-and -max-phrase-length 5 -reordering msd-bidirectional-fe -score-options '--GoodTuring --MinScore 2:0.0001' -parallel -corpus-dir /home/thaesue/smt_se/Data/model8/my-en/training/prepared.1 -giza-e2f /home/thaesue/smt_se/Data/model8/my-en/training/giza.1 -direction 2 
+
+echo 'finished at '`date`
+touch /home/thaesue/smt_se/Data/model8/my-en/steps/1/TRAINING_run-giza.1.DONE

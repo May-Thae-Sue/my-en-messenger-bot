@@ -1,0 +1,4 @@
+starting at နွေ ဩ 4 23:31:00 +0630 2019 on may-thae-sue
+To run the decoder, please call:
+  moses -f /home/thaesue/smt_se/Data/model8/my-en/tuning/filtered.1/moses.ini -i /home/thaesue/smt_se/Data/model8/my-en/tuning/filtered.1/input.15072
+finished at နွေ ဩ 4 23:31:00 +0630 2019

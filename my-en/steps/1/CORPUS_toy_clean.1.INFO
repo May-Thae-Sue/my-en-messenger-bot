@@ -1,0 +1,2 @@
+max-sentence-length = 80
+INPUT = USED /home/thaesue/smt_se/Data/model8/my-en/corpus/toy.tok.1

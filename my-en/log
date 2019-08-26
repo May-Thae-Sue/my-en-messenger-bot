@@ -1,0 +1,258 @@
+nohup: ignoring input
+STARTING UP AS PROCESS 14130 ON may-thae-sue AT နွေ ဩ  4 23:28:14 +0630 2019
+LOAD CONFIG...
+working directory is /home/thaesue/smt_se/Data/model8/my-en
+running experimental run number 1
+
+ESTABLISH WHICH STEPS NEED TO BE RUN
+
+FIND DEPENDENCIES BETWEEN STEPS
+
+CHECKING IF OLD STEPS ARE RE-USABLE
+
+STEP SUMMARY:
+83 EVALUATION:test:input-from-sgm ->	run
+78 CORPUS:toy:tokenize ->	run
+77 CORPUS:toy:clean ->	run
+73 CORPUS:toy:truecase ->	run
+67 TRUECASER:consolidate ->	run
+66 TRUECASER:train ->	run
+65 LM:toy:tokenize ->	run
+62 LM:toy:truecase ->	run
+58 LM:toy:train ->	run
+55 LM:toy:binarize ->	run
+54 TRAINING:consolidate ->	run
+53 TRAINING:prepare-data ->	run
+52 TRAINING:run-giza ->	run
+51 TRAINING:run-giza-inverse ->	run
+50 TRAINING:symmetrize-giza ->	run
+49 TRAINING:build-lex-trans ->	run
+46 TRAINING:extract-phrases ->	run
+45 TRAINING:build-reordering ->	run
+44 TRAINING:build-ttable ->	run
+41 TRAINING:create-config ->	run
+34 TUNING:truecase-input ->	run
+31 TUNING:tokenize-reference ->	run
+29 TUNING:truecase-reference ->	run
+26 TUNING:filter ->	run
+25 TUNING:apply-filter ->	run
+24 TUNING:tune ->	run
+23 TUNING:apply-weights ->	run
+20 EVALUATION:test:truecase-input ->	run
+17 EVALUATION:test:filter ->	run
+16 EVALUATION:test:apply-filter ->	run
+15 EVALUATION:test:decode ->	run
+14 EVALUATION:test:remove-markup ->	run
+12 EVALUATION:test:detruecase-output ->	run
+11 EVALUATION:test:detokenize-output ->	run
+10 EVALUATION:test:wrap ->	run
+9 EVALUATION:test:reference-from-sgm ->	run
+8 EVALUATION:test:tokenize-reference ->	run
+4 EVALUATION:test:nist-bleu ->	run
+3 EVALUATION:test:nist-bleu-c ->	run
+2 EVALUATION:test:analysis ->	run
+1 EVALUATION:test:analysis-coverage ->	run
+0 REPORTING:report ->	run
+convert-im6.q16: not authorized `steps/1/graph.1.ps' @ error/constitute.c/ReadImage/412.
+convert-im6.q16: no images defined `steps/1/graph.1.png' @ error/convert.c/ConvertImageCommand/3258.
+display-im6.q16: unable to open image `steps/1/graph.1.png': No such file or directory @ error/blob.c/OpenBlob/2701.
+display-im6.q16: no decode delegate for this image format `' @ error/constitute.c/ReadImage/504.
+convert-im6.q16: not authorized `steps/1/graph.1.ps' @ error/constitute.c/ReadImage/412.
+convert-im6.q16: no images defined `steps/1/graph.1.png' @ error/convert.c/ConvertImageCommand/3258.
+
+EXECUTE STEPS
+number of steps doable or running: 5 at နွေ ဩ  4 23:28:14 +0630 2019
+	doable: LM:toy:tokenize
+	doable: CORPUS:toy:tokenize
+	doable: EVALUATION:test:reference-from-sgm
+	doable: TUNING:tokenize-reference
+	doable: EVALUATION:test:input-from-sgm
+	executing /home/thaesue/smt_se/Data/model8/my-en/steps/1/LM_toy_tokenize.1 via sh (1 active)
+	executing /home/thaesue/smt_se/Data/model8/my-en/steps/1/CORPUS_toy_tokenize.1 via sh (2 active)
+convert-im6.q16: not authorized `steps/1/graph.1.ps' @ error/constitute.c/ReadImage/412.
+convert-im6.q16: no images defined `steps/1/graph.1.png' @ error/convert.c/ConvertImageCommand/3258.
+number of steps doable or running: 4 at နွေ ဩ  4 23:28:27 +0630 2019
+	doable: CORPUS:toy:clean
+	doable: EVALUATION:test:input-from-sgm
+	doable: EVALUATION:test:reference-from-sgm
+	doable: TUNING:tokenize-reference
+	executing /home/thaesue/smt_se/Data/model8/my-en/steps/1/CORPUS_toy_clean.1 via sh (1 active)
+	executing /home/thaesue/smt_se/Data/model8/my-en/steps/1/EVALUATION_test_input-from-sgm.1 via sh (2 active)
+convert-im6.q16: not authorized `steps/1/graph.1.ps' @ error/constitute.c/ReadImage/412.
+convert-im6.q16: no images defined `steps/1/graph.1.png' @ error/convert.c/ConvertImageCommand/3258.
+number of steps doable or running: 3 at နွေ ဩ  4 23:28:39 +0630 2019
+	doable: TRUECASER:consolidate
+	doable: EVALUATION:test:reference-from-sgm
+	doable: TUNING:tokenize-reference
+	executing /home/thaesue/smt_se/Data/model8/my-en/steps/1/TRUECASER_consolidate.1 via sh (1 active)
+	executing /home/thaesue/smt_se/Data/model8/my-en/steps/1/EVALUATION_test_reference-from-sgm.1 via sh (2 active)
+convert-im6.q16: not authorized `steps/1/graph.1.ps' @ error/constitute.c/ReadImage/412.
+convert-im6.q16: no images defined `steps/1/graph.1.png' @ error/convert.c/ConvertImageCommand/3258.
+number of steps doable or running: 3 at နွေ ဩ  4 23:28:51 +0630 2019
+	doable: EVALUATION:test:tokenize-reference
+	doable: TUNING:tokenize-reference
+	doable: TRUECASER:train
+	executing /home/thaesue/smt_se/Data/model8/my-en/steps/1/EVALUATION_test_tokenize-reference.1 via sh (1 active)
+	executing /home/thaesue/smt_se/Data/model8/my-en/steps/1/TUNING_tokenize-reference.1 via sh (2 active)
+convert-im6.q16: not authorized `steps/1/graph.1.ps' @ error/constitute.c/ReadImage/412.
+convert-im6.q16: no images defined `steps/1/graph.1.png' @ error/convert.c/ConvertImageCommand/3258.
+number of steps doable or running: 1 at နွေ ဩ  4 23:29:03 +0630 2019
+	doable: TRUECASER:train
+	executing /home/thaesue/smt_se/Data/model8/my-en/steps/1/TRUECASER_train.1 via sh (1 active)
+convert-im6.q16: not authorized `steps/1/graph.1.ps' @ error/constitute.c/ReadImage/412.
+convert-im6.q16: no images defined `steps/1/graph.1.png' @ error/convert.c/ConvertImageCommand/3258.
+number of steps doable or running: 5 at နွေ ဩ  4 23:29:10 +0630 2019
+	doable: CORPUS:toy:truecase
+	doable: LM:toy:truecase
+	doable: EVALUATION:test:truecase-input
+	doable: TUNING:truecase-input
+	doable: TUNING:truecase-reference
+	executing /home/thaesue/smt_se/Data/model8/my-en/steps/1/CORPUS_toy_truecase.1 via sh (1 active)
+	executing /home/thaesue/smt_se/Data/model8/my-en/steps/1/LM_toy_truecase.1 via sh (2 active)
+convert-im6.q16: not authorized `steps/1/graph.1.ps' @ error/constitute.c/ReadImage/412.
+convert-im6.q16: no images defined `steps/1/graph.1.png' @ error/convert.c/ConvertImageCommand/3258.
+number of steps doable or running: 5 at နွေ ဩ  4 23:29:22 +0630 2019
+	doable: TRAINING:consolidate
+	doable: LM:toy:train
+	doable: EVALUATION:test:truecase-input
+	doable: TUNING:truecase-input
+	doable: TUNING:truecase-reference
+	executing /home/thaesue/smt_se/Data/model8/my-en/steps/1/TRAINING_consolidate.1 via sh (1 active)
+	executing /home/thaesue/smt_se/Data/model8/my-en/steps/1/LM_toy_train.1 via sh (2 active)
+convert-im6.q16: not authorized `steps/1/graph.1.ps' @ error/constitute.c/ReadImage/412.
+convert-im6.q16: no images defined `steps/1/graph.1.png' @ error/convert.c/ConvertImageCommand/3258.
+number of steps doable or running: 5 at နွေ ဩ  4 23:29:34 +0630 2019
+	doable: LM:toy:binarize
+	doable: TRAINING:prepare-data
+	doable: EVALUATION:test:truecase-input
+	doable: TUNING:truecase-input
+	doable: TUNING:truecase-reference
+	executing /home/thaesue/smt_se/Data/model8/my-en/steps/1/LM_toy_binarize.1 via sh (1 active)
+	executing /home/thaesue/smt_se/Data/model8/my-en/steps/1/TRAINING_prepare-data.1 via sh (2 active)
+convert-im6.q16: not authorized `steps/1/graph.1.ps' @ error/constitute.c/ReadImage/412.
+convert-im6.q16: no images defined `steps/1/graph.1.png' @ error/convert.c/ConvertImageCommand/3258.
+number of steps doable or running: 4 at နွေ ဩ  4 23:29:46 +0630 2019
+	running: TRAINING:prepare-data
+	doable: EVALUATION:test:truecase-input
+	doable: TUNING:truecase-input
+	doable: TUNING:truecase-reference
+	executing /home/thaesue/smt_se/Data/model8/my-en/steps/1/EVALUATION_test_truecase-input.1 via sh (2 active)
+convert-im6.q16: not authorized `steps/1/graph.1.ps' @ error/constitute.c/ReadImage/412.
+convert-im6.q16: no images defined `steps/1/graph.1.png' @ error/convert.c/ConvertImageCommand/3258.
+number of steps doable or running: 4 at နွေ ဩ  4 23:29:53 +0630 2019
+	doable: TUNING:truecase-reference
+	doable: TUNING:truecase-input
+	doable: TRAINING:run-giza-inverse
+	doable: TRAINING:run-giza
+	executing /home/thaesue/smt_se/Data/model8/my-en/steps/1/TUNING_truecase-reference.1 via sh (1 active)
+	executing /home/thaesue/smt_se/Data/model8/my-en/steps/1/TUNING_truecase-input.1 via sh (2 active)
+convert-im6.q16: not authorized `steps/1/graph.1.ps' @ error/constitute.c/ReadImage/412.
+convert-im6.q16: no images defined `steps/1/graph.1.png' @ error/convert.c/ConvertImageCommand/3258.
+number of steps doable or running: 2 at နွေ ဩ  4 23:30:05 +0630 2019
+	doable: TRAINING:run-giza-inverse
+	doable: TRAINING:run-giza
+	executing /home/thaesue/smt_se/Data/model8/my-en/steps/1/TRAINING_run-giza-inverse.1 via sh (1 active)
+	executing /home/thaesue/smt_se/Data/model8/my-en/steps/1/TRAINING_run-giza.1 via sh (2 active)
+convert-im6.q16: not authorized `steps/1/graph.1.ps' @ error/constitute.c/ReadImage/412.
+convert-im6.q16: no images defined `steps/1/graph.1.png' @ error/convert.c/ConvertImageCommand/3258.
+number of steps doable or running: 1 at နွေ ဩ  4 23:30:19 +0630 2019
+	running: TRAINING:run-giza
+convert-im6.q16: not authorized `steps/1/graph.1.ps' @ error/constitute.c/ReadImage/412.
+convert-im6.q16: no images defined `steps/1/graph.1.png' @ error/convert.c/ConvertImageCommand/3258.
+number of steps doable or running: 1 at နွေ ဩ  4 23:30:24 +0630 2019
+	doable: TRAINING:symmetrize-giza
+	executing /home/thaesue/smt_se/Data/model8/my-en/steps/1/TRAINING_symmetrize-giza.1 via sh (1 active)
+convert-im6.q16: not authorized `steps/1/graph.1.ps' @ error/constitute.c/ReadImage/412.
+convert-im6.q16: no images defined `steps/1/graph.1.png' @ error/convert.c/ConvertImageCommand/3258.
+number of steps doable or running: 2 at နွေ ဩ  4 23:30:31 +0630 2019
+	doable: TRAINING:build-lex-trans
+	doable: TRAINING:extract-phrases
+	executing /home/thaesue/smt_se/Data/model8/my-en/steps/1/TRAINING_build-lex-trans.1 via sh (1 active)
+	executing /home/thaesue/smt_se/Data/model8/my-en/steps/1/TRAINING_extract-phrases.1 via sh (2 active)
+convert-im6.q16: not authorized `steps/1/graph.1.ps' @ error/constitute.c/ReadImage/412.
+convert-im6.q16: no images defined `steps/1/graph.1.png' @ error/convert.c/ConvertImageCommand/3258.
+number of steps doable or running: 2 at နွေ ဩ  4 23:30:43 +0630 2019
+	doable: TRAINING:build-reordering
+	doable: TRAINING:build-ttable
+	executing /home/thaesue/smt_se/Data/model8/my-en/steps/1/TRAINING_build-reordering.1 via sh (1 active)
+	executing /home/thaesue/smt_se/Data/model8/my-en/steps/1/TRAINING_build-ttable.1 via sh (2 active)
+convert-im6.q16: not authorized `steps/1/graph.1.ps' @ error/constitute.c/ReadImage/412.
+convert-im6.q16: no images defined `steps/1/graph.1.png' @ error/convert.c/ConvertImageCommand/3258.
+number of steps doable or running: 4 at နွေ ဩ  4 23:30:55 +0630 2019
+	doable: TUNING:filter
+	doable: EVALUATION:test:filter
+	doable: TRAINING:create-config
+	doable: EVALUATION:test:analysis-coverage
+	executing /home/thaesue/smt_se/Data/model8/my-en/steps/1/TUNING_filter.1 via sh (1 active)
+	executing /home/thaesue/smt_se/Data/model8/my-en/steps/1/EVALUATION_test_filter.1 via sh (2 active)
+convert-im6.q16: not authorized `steps/1/graph.1.ps' @ error/constitute.c/ReadImage/412.
+convert-im6.q16: no images defined `steps/1/graph.1.png' @ error/convert.c/ConvertImageCommand/3258.
+number of steps doable or running: 2 at နွေ ဩ  4 23:31:07 +0630 2019
+	doable: TRAINING:create-config
+	doable: EVALUATION:test:analysis-coverage
+	executing /home/thaesue/smt_se/Data/model8/my-en/steps/1/TRAINING_create-config.1 via sh (1 active)
+	executing /home/thaesue/smt_se/Data/model8/my-en/steps/1/EVALUATION_test_analysis-coverage.1 via sh (2 active)
+convert-im6.q16: not authorized `steps/1/graph.1.ps' @ error/constitute.c/ReadImage/412.
+convert-im6.q16: no images defined `steps/1/graph.1.png' @ error/convert.c/ConvertImageCommand/3258.
+number of steps doable or running: 1 at နွေ ဩ  4 23:31:19 +0630 2019
+	doable: TUNING:apply-filter
+	executing /home/thaesue/smt_se/Data/model8/my-en/steps/1/TUNING_apply-filter.1 via sh (1 active)
+convert-im6.q16: not authorized `steps/1/graph.1.ps' @ error/constitute.c/ReadImage/412.
+convert-im6.q16: no images defined `steps/1/graph.1.png' @ error/convert.c/ConvertImageCommand/3258.
+number of steps doable or running: 1 at နွေ ဩ  4 23:31:26 +0630 2019
+	doable: TUNING:tune
+	executing /home/thaesue/smt_se/Data/model8/my-en/steps/1/TUNING_tune.1 via sh (1 active)
+convert-im6.q16: not authorized `steps/1/graph.1.ps' @ error/constitute.c/ReadImage/412.
+convert-im6.q16: no images defined `steps/1/graph.1.png' @ error/convert.c/ConvertImageCommand/3258.
+number of steps doable or running: 1 at နွေ ဩ  4 23:36:15 +0630 2019
+	doable: TUNING:apply-weights
+	executing /home/thaesue/smt_se/Data/model8/my-en/steps/1/TUNING_apply-weights.1 via sh (1 active)
+convert-im6.q16: not authorized `steps/1/graph.1.ps' @ error/constitute.c/ReadImage/412.
+convert-im6.q16: no images defined `steps/1/graph.1.png' @ error/convert.c/ConvertImageCommand/3258.
+number of steps doable or running: 1 at နွေ ဩ  4 23:36:22 +0630 2019
+	doable: EVALUATION:test:apply-filter
+	executing /home/thaesue/smt_se/Data/model8/my-en/steps/1/EVALUATION_test_apply-filter.1 via sh (1 active)
+convert-im6.q16: not authorized `steps/1/graph.1.ps' @ error/constitute.c/ReadImage/412.
+convert-im6.q16: no images defined `steps/1/graph.1.png' @ error/convert.c/ConvertImageCommand/3258.
+number of steps doable or running: 1 at နွေ ဩ  4 23:36:29 +0630 2019
+	doable: EVALUATION:test:decode
+	executing /home/thaesue/smt_se/Data/model8/my-en/steps/1/EVALUATION_test_decode.1 via sh (1 active)
+convert-im6.q16: not authorized `steps/1/graph.1.ps' @ error/constitute.c/ReadImage/412.
+convert-im6.q16: no images defined `steps/1/graph.1.png' @ error/convert.c/ConvertImageCommand/3258.
+number of steps doable or running: 1 at နွေ ဩ  4 23:37:23 +0630 2019
+	doable: EVALUATION:test:remove-markup
+	executing /home/thaesue/smt_se/Data/model8/my-en/steps/1/EVALUATION_test_remove-markup.1 via sh (1 active)
+convert-im6.q16: not authorized `steps/1/graph.1.ps' @ error/constitute.c/ReadImage/412.
+convert-im6.q16: no images defined `steps/1/graph.1.png' @ error/convert.c/ConvertImageCommand/3258.
+number of steps doable or running: 1 at နွေ ဩ  4 23:37:30 +0630 2019
+	doable: EVALUATION:test:detruecase-output
+	executing /home/thaesue/smt_se/Data/model8/my-en/steps/1/EVALUATION_test_detruecase-output.1 via sh (1 active)
+convert-im6.q16: not authorized `steps/1/graph.1.ps' @ error/constitute.c/ReadImage/412.
+convert-im6.q16: no images defined `steps/1/graph.1.png' @ error/convert.c/ConvertImageCommand/3258.
+number of steps doable or running: 2 at နွေ ဩ  4 23:37:38 +0630 2019
+	doable: EVALUATION:test:detokenize-output
+	doable: EVALUATION:test:analysis
+	executing /home/thaesue/smt_se/Data/model8/my-en/steps/1/EVALUATION_test_detokenize-output.1 via sh (1 active)
+	executing /home/thaesue/smt_se/Data/model8/my-en/steps/1/EVALUATION_test_analysis.1 via sh (2 active)
+convert-im6.q16: not authorized `steps/1/graph.1.ps' @ error/constitute.c/ReadImage/412.
+convert-im6.q16: no images defined `steps/1/graph.1.png' @ error/convert.c/ConvertImageCommand/3258.
+number of steps doable or running: 1 at နွေ ဩ  4 23:37:50 +0630 2019
+	doable: EVALUATION:test:wrap
+	executing /home/thaesue/smt_se/Data/model8/my-en/steps/1/EVALUATION_test_wrap.1 via sh (1 active)
+convert-im6.q16: not authorized `steps/1/graph.1.ps' @ error/constitute.c/ReadImage/412.
+convert-im6.q16: no images defined `steps/1/graph.1.png' @ error/convert.c/ConvertImageCommand/3258.
+number of steps doable or running: 2 at နွေ ဩ  4 23:37:57 +0630 2019
+	doable: EVALUATION:test:nist-bleu
+	doable: EVALUATION:test:nist-bleu-c
+	executing /home/thaesue/smt_se/Data/model8/my-en/steps/1/EVALUATION_test_nist-bleu.1 via sh (1 active)
+	executing /home/thaesue/smt_se/Data/model8/my-en/steps/1/EVALUATION_test_nist-bleu-c.1 via sh (2 active)
+convert-im6.q16: not authorized `steps/1/graph.1.ps' @ error/constitute.c/ReadImage/412.
+convert-im6.q16: no images defined `steps/1/graph.1.png' @ error/convert.c/ConvertImageCommand/3258.
+number of steps doable or running: 1 at နွေ ဩ  4 23:38:09 +0630 2019
+	doable: REPORTING:report
+	executing /home/thaesue/smt_se/Data/model8/my-en/steps/1/REPORTING_report.1 via sh (1 active)
+convert-im6.q16: not authorized `steps/1/graph.1.ps' @ error/constitute.c/ReadImage/412.
+convert-im6.q16: no images defined `steps/1/graph.1.png' @ error/convert.c/ConvertImageCommand/3258.
+number of steps doable or running: 0 at နွေ ဩ  4 23:38:16 +0630 2019
+convert-im6.q16: not authorized `steps/1/graph.1.ps' @ error/constitute.c/ReadImage/412.
+convert-im6.q16: no images defined `steps/1/graph.1.png' @ error/convert.c/ConvertImageCommand/3258.

@@ -1,0 +1,3 @@
+output-tokenizer = /home/thaesue/smt_se/mosesdecoder/scripts/tokenizer/tokenizer.perl -a -l en [1561038277]
+INPUT = USED /home/thaesue/smt_se/Data/data8/dev.en
+TUNING:raw-reference = /home/thaesue/smt_se/Data/data8/dev.en [1564823059]

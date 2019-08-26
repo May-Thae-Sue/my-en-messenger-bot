@@ -1,0 +1,2 @@
+trainer = /home/thaesue/smt_se/mosesdecoder/scripts/recaser/train-truecaser.perl [1561038277]
+INPUT = USED /home/thaesue/smt_se/Data/model8/my-en/corpus/toy.clean.1

@@ -1,0 +1,14 @@
+#!/bin/bash
+
+PATH="/home/thaesue/anaconda3/condabin:/home/thaesue/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin"
+cd /home/thaesue/smt_se/Data/model8/my-en
+echo 'starting at '`date`' on '`hostname`
+mkdir -p /home/thaesue/smt_se/Data/model8/my-en/evaluation
+
+touch /home/thaesue/smt_se/Data/model8/my-en/evaluation/test.moses.table.ini.1
+/home/thaesue/smt_se/mosesdecoder/scripts/training/train-model.perl -dont-zip -first-step 9 -external-bin-dir /home/thaesue/smt_se/tools -f my -e en -alignment grow-diag-final-and -max-phrase-length 5 -reordering msd-bidirectional-fe -score-options '--GoodTuring --MinScore 2:0.0001' -parallel -phrase-translation-table /home/thaesue/smt_se/Data/model8/my-en/model/phrase-table.1 -reordering-table /home/thaesue/smt_se/Data/model8/my-en/model/reordering-table.1 -config /home/thaesue/smt_se/Data/model8/my-en/evaluation/test.moses.table.ini.1 -lm 0:3:/home/thaesue/smt_se/Data/model8/my-en/evaluation/test.moses.table.ini.1:8
+/home/thaesue/smt_se/mosesdecoder/scripts/training/filter-model-given-input.pl /home/thaesue/smt_se/Data/model8/my-en/evaluation/test.filtered.1 /home/thaesue/smt_se/Data/model8/my-en/evaluation/test.moses.table.ini.1 /home/thaesue/smt_se/Data/model8/my-en/evaluation/test.input.tc.1  -Binarizer "/home/thaesue/smt_se/mosesdecoder/bin/CreateOnDiskPt 1 1 4 100 2"
+rm /home/thaesue/smt_se/Data/model8/my-en/evaluation/test.moses.table.ini.1
+
+echo 'finished at '`date`
+touch /home/thaesue/smt_se/Data/model8/my-en/steps/1/EVALUATION_test_filter.1.DONE

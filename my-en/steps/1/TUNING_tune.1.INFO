@@ -1,0 +1,5 @@
+decoder-settings = -threads 4
+tuning-settings = -mertdir /home/thaesue/smt_se/mosesdecoder/bin
+decoder = /home/thaesue/smt_se/mosesdecoder/bin/moses [1561376925]
+nbest = 100
+INPUT = USED /home/thaesue/smt_se/Data/model8/my-en/model/moses.ini.1 /home/thaesue/smt_se/Data/model8/my-en/tuning/input.tc.1 /home/thaesue/smt_se/Data/model8/my-en/tuning/reference.tc.1    /home/thaesue/smt_se/Data/model8/my-en/tuning/moses.filtered.ini.1

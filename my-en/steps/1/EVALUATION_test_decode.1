@@ -1,0 +1,11 @@
+#!/bin/bash
+
+PATH="/home/thaesue/anaconda3/condabin:/home/thaesue/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin"
+cd /home/thaesue/smt_se/Data/model8/my-en
+echo 'starting at '`date`' on '`hostname`
+mkdir -p /home/thaesue/smt_se/Data/model8/my-en/evaluation
+
+/home/thaesue/smt_se/mosesdecoder/bin/moses -search-algorithm 1 -cube-pruning-pop-limit 5000 -s 5000 -threads 4 -t -text-type "test" -v 0 -f /home/thaesue/smt_se/Data/model8/my-en/evaluation/test.filtered.ini.1 < /home/thaesue/smt_se/Data/model8/my-en/evaluation/test.input.tc.1 > /home/thaesue/smt_se/Data/model8/my-en/evaluation/test.output.1
+
+echo 'finished at '`date`
+touch /home/thaesue/smt_se/Data/model8/my-en/steps/1/EVALUATION_test_decode.1.DONE

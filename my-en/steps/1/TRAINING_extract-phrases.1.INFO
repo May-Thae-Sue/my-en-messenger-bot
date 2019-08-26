@@ -1,0 +1,4 @@
+lexicalized-reordering = msd-bidirectional-fe
+INPUT = USED /home/thaesue/smt_se/Data/model8/my-en/model/aligned.1 /home/thaesue/smt_se/Data/model8/my-en/training/corpus.1
+script = /home/thaesue/smt_se/mosesdecoder/scripts/training/train-model.perl [1561038277]
+max-phrase-length = 5

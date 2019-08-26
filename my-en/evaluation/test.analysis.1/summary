@@ -1,0 +1,16 @@
+precision-1-total: 6761
+precision-1-correct: 4605
+precision-2-total: 5403
+precision-2-correct: 3004
+precision-3-total: 4194
+precision-3-correct: 2183
+precision-4-total: 3167
+precision-4-correct: 1469
+recall-1-total: 6892
+recall-1-correct: 4605
+recall-2-total: 5534
+recall-2-correct: 3004
+recall-3-total: 4279
+recall-3-correct: 2183
+recall-4-total: 3214
+recall-4-correct: 1469

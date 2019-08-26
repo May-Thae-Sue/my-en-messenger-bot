@@ -1,0 +1,229 @@
+Using SCRIPTS_ROOTDIR: /home/thaesue/smt_se/mosesdecoder/scripts
+Asking moses for feature names and values from /home/thaesue/smt_se/Data/model8/my-en/tuning/moses.filtered.ini.1
+Executing: /home/thaesue/smt_se/mosesdecoder/bin/moses -threads 4 -v 0  -config /home/thaesue/smt_se/Data/model8/my-en/tuning/moses.filtered.ini.1 -show-weights
+exec: /home/thaesue/smt_se/mosesdecoder/bin/moses -threads 4 -v 0  -config /home/thaesue/smt_se/Data/model8/my-en/tuning/moses.filtered.ini.1 -show-weights
+Executing: /home/thaesue/smt_se/mosesdecoder/bin/moses -threads 4 -v 0  -config /home/thaesue/smt_se/Data/model8/my-en/tuning/moses.filtered.ini.1 -show-weights > ./features.list 2> /dev/null
+MERT starting values and ranges for random generation:
+  LexicalReordering0 =   0.300 ( 0.00 ..  1.00)
+  LexicalReordering0 =   0.300 ( 0.00 ..  1.00)
+  LexicalReordering0 =   0.300 ( 0.00 ..  1.00)
+  LexicalReordering0 =   0.300 ( 0.00 ..  1.00)
+  LexicalReordering0 =   0.300 ( 0.00 ..  1.00)
+  LexicalReordering0 =   0.300 ( 0.00 ..  1.00)
+  Distortion0 =   0.300 ( 0.00 ..  1.00)
+    LM0 =   0.500 ( 0.00 ..  1.00)
+  WordPenalty0 =  -1.000 ( 0.00 ..  1.00)
+  PhrasePenalty0 =   0.200 ( 0.00 ..  1.00)
+  TranslationModel0 =   0.200 ( 0.00 ..  1.00)
+  TranslationModel0 =   0.200 ( 0.00 ..  1.00)
+  TranslationModel0 =   0.200 ( 0.00 ..  1.00)
+  TranslationModel0 =   0.200 ( 0.00 ..  1.00)
+featlist: LexicalReordering0=0.300000 
+featlist: LexicalReordering0=0.300000 
+featlist: LexicalReordering0=0.300000 
+featlist: LexicalReordering0=0.300000 
+featlist: LexicalReordering0=0.300000 
+featlist: LexicalReordering0=0.300000 
+featlist: Distortion0=0.300000 
+featlist: LM0=0.500000 
+featlist: WordPenalty0=-1.000000 
+featlist: PhrasePenalty0=0.200000 
+featlist: TranslationModel0=0.200000 
+featlist: TranslationModel0=0.200000 
+featlist: TranslationModel0=0.200000 
+featlist: TranslationModel0=0.200000 
+Saved: ./run1.moses.ini
+Normalizing lambdas: 0.300000 0.300000 0.300000 0.300000 0.300000 0.300000 0.300000 0.500000 -1.000000 0.200000 0.200000 0.200000 0.200000 0.200000
+DECODER_CFG = -weight-overwrite 'PhrasePenalty0= 0.043478 Distortion0= 0.065217 WordPenalty0= -0.217391 LexicalReordering0= 0.065217 0.065217 0.065217 0.065217 0.065217 0.065217 TranslationModel0= 0.043478 0.043478 0.043478 0.043478 LM0= 0.108696'
+Executing: /home/thaesue/smt_se/mosesdecoder/bin/moses -threads 4 -v 0   -config /home/thaesue/smt_se/Data/model8/my-en/tuning/moses.filtered.ini.1 -weight-overwrite 'PhrasePenalty0= 0.043478 Distortion0= 0.065217 WordPenalty0= -0.217391 LexicalReordering0= 0.065217 0.065217 0.065217 0.065217 0.065217 0.065217 TranslationModel0= 0.043478 0.043478 0.043478 0.043478 LM0= 0.108696'  -n-best-list run1.best100.out 100 distinct  -input-file /home/thaesue/smt_se/Data/model8/my-en/tuning/input.tc.1 > run1.out 
+Executing: /home/thaesue/smt_se/mosesdecoder/bin/moses -threads 4 -v 0   -config /home/thaesue/smt_se/Data/model8/my-en/tuning/moses.filtered.ini.1 -weight-overwrite 'PhrasePenalty0= 0.043478 Distortion0= 0.065217 WordPenalty0= -0.217391 LexicalReordering0= 0.065217 0.065217 0.065217 0.065217 0.065217 0.065217 TranslationModel0= 0.043478 0.043478 0.043478 0.043478 LM0= 0.108696'  -n-best-list run1.best100.out 100 distinct  -input-file /home/thaesue/smt_se/Data/model8/my-en/tuning/input.tc.1 > run1.out
+binary file loaded, default OFF_T: -1
+binary file loaded, default OFF_T: -1
+binary file loaded, default OFF_T: -1
+binary file loaded, default OFF_T: -1
+binary file loaded, default OFF_T: -1
+Name:moses	VmPeak:150188 kB	VmRSS:83448 kB	RSSMax:84068 kB	user:51.532	sys:0.431	CPU:51.963	real:13.702
+The decoder returns the scores in this order: LexicalReordering0 LexicalReordering0 LexicalReordering0 LexicalReordering0 LexicalReordering0 LexicalReordering0 Distortion0 LM0 WordPenalty0 PhrasePenalty0 TranslationModel0 TranslationModel0 TranslationModel0 TranslationModel0
+Executing: gzip -f run1.best100.out
+Scoring the nbestlist.
+exec: /home/thaesue/smt_se/Data/model8/my-en/tuning/tmp.1/extractor.sh
+Executing: /home/thaesue/smt_se/Data/model8/my-en/tuning/tmp.1/extractor.sh > extract.out 2> extract.err
+Executing: \cp -f init.opt run1.init.opt
+exec: /home/thaesue/smt_se/mosesdecoder/bin/mert -d 14  --sctype BLEU --scconfig case:true --ffile run1.features.dat --scfile run1.scores.dat --ifile run1.init.opt -n 20
+Executing: /home/thaesue/smt_se/mosesdecoder/bin/mert -d 14  --sctype BLEU --scconfig case:true --ffile run1.features.dat --scfile run1.scores.dat --ifile run1.init.opt -n 20 > mert.out 2> mert.log
+Executing: \cp -f extract.err run1.extract.err
+Executing: \cp -f extract.out run1.extract.out
+Executing: \cp -f mert.out run1.mert.out
+Executing: \cp -f mert.log run1.mert.log
+Executing: touch mert.log run1.mert.log
+Executing: \cp -f weights.txt run1.weights.txt
+featlist: LexicalReordering0=0.0713742 
+featlist: LexicalReordering0=0.01373 
+featlist: LexicalReordering0=0.0606226 
+featlist: LexicalReordering0=0.0606226 
+featlist: LexicalReordering0=0.0606226 
+featlist: LexicalReordering0=0.0537355 
+featlist: Distortion0=-0.0597075 
+featlist: LM0=0.136146 
+featlist: WordPenalty0=-0.202075 
+featlist: PhrasePenalty0=0.154771 
+featlist: TranslationModel0=0.0404151 
+featlist: TranslationModel0=0.0053472 
+featlist: TranslationModel0=0.0404151 
+featlist: TranslationModel0=0.0404151 
+Saved: ./run2.moses.ini
+DECODER_CFG = -weight-overwrite 'Distortion0= -0.059707 PhrasePenalty0= 0.154771 LexicalReordering0= 0.071374 0.013730 0.060623 0.060623 0.060623 0.053735 WordPenalty0= -0.202075 LM0= 0.136146 TranslationModel0= 0.040415 0.005347 0.040415 0.040415'
+Executing: /home/thaesue/smt_se/mosesdecoder/bin/moses -threads 4 -v 0   -config /home/thaesue/smt_se/Data/model8/my-en/tuning/moses.filtered.ini.1 -weight-overwrite 'Distortion0= -0.059707 PhrasePenalty0= 0.154771 LexicalReordering0= 0.071374 0.013730 0.060623 0.060623 0.060623 0.053735 WordPenalty0= -0.202075 LM0= 0.136146 TranslationModel0= 0.040415 0.005347 0.040415 0.040415'  -n-best-list run2.best100.out 100 distinct  -input-file /home/thaesue/smt_se/Data/model8/my-en/tuning/input.tc.1 > run2.out 
+Executing: /home/thaesue/smt_se/mosesdecoder/bin/moses -threads 4 -v 0   -config /home/thaesue/smt_se/Data/model8/my-en/tuning/moses.filtered.ini.1 -weight-overwrite 'Distortion0= -0.059707 PhrasePenalty0= 0.154771 LexicalReordering0= 0.071374 0.013730 0.060623 0.060623 0.060623 0.053735 WordPenalty0= -0.202075 LM0= 0.136146 TranslationModel0= 0.040415 0.005347 0.040415 0.040415'  -n-best-list run2.best100.out 100 distinct  -input-file /home/thaesue/smt_se/Data/model8/my-en/tuning/input.tc.1 > run2.out
+binary file loaded, default OFF_T: -1
+binary file loaded, default OFF_T: -1
+binary file loaded, default OFF_T: -1
+binary file loaded, default OFF_T: -1
+binary file loaded, default OFF_T: -1
+Name:moses	VmPeak:148140 kB	VmRSS:81576 kB	RSSMax:82184 kB	user:49.681	sys:0.383	CPU:50.065	real:12.821
+The decoder returns the scores in this order: LexicalReordering0 LexicalReordering0 LexicalReordering0 LexicalReordering0 LexicalReordering0 LexicalReordering0 Distortion0 LM0 WordPenalty0 PhrasePenalty0 TranslationModel0 TranslationModel0 TranslationModel0 TranslationModel0
+Executing: gzip -f run2.best100.out
+Scoring the nbestlist.
+exec: /home/thaesue/smt_se/Data/model8/my-en/tuning/tmp.1/extractor.sh
+Executing: /home/thaesue/smt_se/Data/model8/my-en/tuning/tmp.1/extractor.sh > extract.out 2> extract.err
+Executing: \cp -f init.opt run2.init.opt
+exec: /home/thaesue/smt_se/mosesdecoder/bin/mert -d 14  --sctype BLEU --scconfig case:true --ffile run1.features.dat,run2.features.dat --scfile run1.scores.dat,run2.scores.dat --ifile run2.init.opt -n 20
+Executing: /home/thaesue/smt_se/mosesdecoder/bin/mert -d 14  --sctype BLEU --scconfig case:true --ffile run1.features.dat,run2.features.dat --scfile run1.scores.dat,run2.scores.dat --ifile run2.init.opt -n 20 > mert.out 2> mert.log
+Executing: \cp -f extract.err run2.extract.err
+Executing: \cp -f extract.out run2.extract.out
+Executing: \cp -f mert.out run2.mert.out
+Executing: \cp -f mert.log run2.mert.log
+Executing: touch mert.log run2.mert.log
+Executing: \cp -f weights.txt run2.weights.txt
+featlist: LexicalReordering0=0.0300007 
+featlist: LexicalReordering0=-0.0338853 
+featlist: LexicalReordering0=0.0337992 
+featlist: LexicalReordering0=0.0528617 
+featlist: LexicalReordering0=0.0112142 
+featlist: LexicalReordering0=0.215409 
+featlist: Distortion0=-0.00201685 
+featlist: LM0=0.113401 
+featlist: WordPenalty0=-0.30395 
+featlist: PhrasePenalty0=0.0520064 
+featlist: TranslationModel0=0.0192673 
+featlist: TranslationModel0=0.0323799 
+featlist: TranslationModel0=0.0295551 
+featlist: TranslationModel0=0.0702541 
+Saved: ./run3.moses.ini
+DECODER_CFG = -weight-overwrite 'TranslationModel0= 0.019267 0.032380 0.029555 0.070254 LM0= 0.113401 WordPenalty0= -0.303950 LexicalReordering0= 0.030001 -0.033885 0.033799 0.052862 0.011214 0.215409 PhrasePenalty0= 0.052006 Distortion0= -0.002017'
+Executing: /home/thaesue/smt_se/mosesdecoder/bin/moses -threads 4 -v 0   -config /home/thaesue/smt_se/Data/model8/my-en/tuning/moses.filtered.ini.1 -weight-overwrite 'TranslationModel0= 0.019267 0.032380 0.029555 0.070254 LM0= 0.113401 WordPenalty0= -0.303950 LexicalReordering0= 0.030001 -0.033885 0.033799 0.052862 0.011214 0.215409 PhrasePenalty0= 0.052006 Distortion0= -0.002017'  -n-best-list run3.best100.out 100 distinct  -input-file /home/thaesue/smt_se/Data/model8/my-en/tuning/input.tc.1 > run3.out 
+Executing: /home/thaesue/smt_se/mosesdecoder/bin/moses -threads 4 -v 0   -config /home/thaesue/smt_se/Data/model8/my-en/tuning/moses.filtered.ini.1 -weight-overwrite 'TranslationModel0= 0.019267 0.032380 0.029555 0.070254 LM0= 0.113401 WordPenalty0= -0.303950 LexicalReordering0= 0.030001 -0.033885 0.033799 0.052862 0.011214 0.215409 PhrasePenalty0= 0.052006 Distortion0= -0.002017'  -n-best-list run3.best100.out 100 distinct  -input-file /home/thaesue/smt_se/Data/model8/my-en/tuning/input.tc.1 > run3.out
+binary file loaded, default OFF_T: -1
+binary file loaded, default OFF_T: -1
+binary file loaded, default OFF_T: -1
+binary file loaded, default OFF_T: -1
+binary file loaded, default OFF_T: -1
+Name:moses	VmPeak:145072 kB	VmRSS:79104 kB	RSSMax:79720 kB	user:50.346	sys:0.423	CPU:50.769	real:12.966
+The decoder returns the scores in this order: LexicalReordering0 LexicalReordering0 LexicalReordering0 LexicalReordering0 LexicalReordering0 LexicalReordering0 Distortion0 LM0 WordPenalty0 PhrasePenalty0 TranslationModel0 TranslationModel0 TranslationModel0 TranslationModel0
+Executing: gzip -f run3.best100.out
+Scoring the nbestlist.
+exec: /home/thaesue/smt_se/Data/model8/my-en/tuning/tmp.1/extractor.sh
+Executing: /home/thaesue/smt_se/Data/model8/my-en/tuning/tmp.1/extractor.sh > extract.out 2> extract.err
+Executing: \cp -f init.opt run3.init.opt
+exec: /home/thaesue/smt_se/mosesdecoder/bin/mert -d 14  --sctype BLEU --scconfig case:true --ffile run1.features.dat,run2.features.dat,run3.features.dat --scfile run1.scores.dat,run2.scores.dat,run3.scores.dat --ifile run3.init.opt -n 20
+Executing: /home/thaesue/smt_se/mosesdecoder/bin/mert -d 14  --sctype BLEU --scconfig case:true --ffile run1.features.dat,run2.features.dat,run3.features.dat --scfile run1.scores.dat,run2.scores.dat,run3.scores.dat --ifile run3.init.opt -n 20 > mert.out 2> mert.log
+Executing: \cp -f extract.err run3.extract.err
+Executing: \cp -f extract.out run3.extract.out
+Executing: \cp -f mert.out run3.mert.out
+Executing: \cp -f mert.log run3.mert.log
+Executing: touch mert.log run3.mert.log
+Executing: \cp -f weights.txt run3.weights.txt
+featlist: LexicalReordering0=0.0609897 
+featlist: LexicalReordering0=-0.0298746 
+featlist: LexicalReordering0=0.108463 
+featlist: LexicalReordering0=0.0660116 
+featlist: LexicalReordering0=0.0197646 
+featlist: LexicalReordering0=0.166872 
+featlist: Distortion0=-0.0155267 
+featlist: LM0=0.0950948 
+featlist: WordPenalty0=-0.205478 
+featlist: PhrasePenalty0=0.131793 
+featlist: TranslationModel0=0.0367593 
+featlist: TranslationModel0=0.0109574 
+featlist: TranslationModel0=-0.00881877 
+featlist: TranslationModel0=0.0435971 
+Saved: ./run4.moses.ini
+DECODER_CFG = -weight-overwrite 'LexicalReordering0= 0.060990 -0.029875 0.108463 0.066012 0.019765 0.166872 WordPenalty0= -0.205478 TranslationModel0= 0.036759 0.010957 -0.008819 0.043597 LM0= 0.095095 Distortion0= -0.015527 PhrasePenalty0= 0.131793'
+Executing: /home/thaesue/smt_se/mosesdecoder/bin/moses -threads 4 -v 0   -config /home/thaesue/smt_se/Data/model8/my-en/tuning/moses.filtered.ini.1 -weight-overwrite 'LexicalReordering0= 0.060990 -0.029875 0.108463 0.066012 0.019765 0.166872 WordPenalty0= -0.205478 TranslationModel0= 0.036759 0.010957 -0.008819 0.043597 LM0= 0.095095 Distortion0= -0.015527 PhrasePenalty0= 0.131793'  -n-best-list run4.best100.out 100 distinct  -input-file /home/thaesue/smt_se/Data/model8/my-en/tuning/input.tc.1 > run4.out 
+Executing: /home/thaesue/smt_se/mosesdecoder/bin/moses -threads 4 -v 0   -config /home/thaesue/smt_se/Data/model8/my-en/tuning/moses.filtered.ini.1 -weight-overwrite 'LexicalReordering0= 0.060990 -0.029875 0.108463 0.066012 0.019765 0.166872 WordPenalty0= -0.205478 TranslationModel0= 0.036759 0.010957 -0.008819 0.043597 LM0= 0.095095 Distortion0= -0.015527 PhrasePenalty0= 0.131793'  -n-best-list run4.best100.out 100 distinct  -input-file /home/thaesue/smt_se/Data/model8/my-en/tuning/input.tc.1 > run4.out
+binary file loaded, default OFF_T: -1
+binary file loaded, default OFF_T: binary file loaded, default OFF_T: -1
+-1
+binary file loaded, default OFF_T: -1
+binary file loaded, default OFF_T: -1
+Name:moses	VmPeak:148140 kB	VmRSS:81828 kB	RSSMax:82424 kB	user:50.706	sys:0.348	CPU:51.053	real:13.034
+The decoder returns the scores in this order: LexicalReordering0 LexicalReordering0 LexicalReordering0 LexicalReordering0 LexicalReordering0 LexicalReordering0 Distortion0 LM0 WordPenalty0 PhrasePenalty0 TranslationModel0 TranslationModel0 TranslationModel0 TranslationModel0
+Executing: gzip -f run4.best100.out
+Scoring the nbestlist.
+exec: /home/thaesue/smt_se/Data/model8/my-en/tuning/tmp.1/extractor.sh
+Executing: /home/thaesue/smt_se/Data/model8/my-en/tuning/tmp.1/extractor.sh > extract.out 2> extract.err
+Executing: \cp -f init.opt run4.init.opt
+exec: /home/thaesue/smt_se/mosesdecoder/bin/mert -d 14  --sctype BLEU --scconfig case:true --ffile run1.features.dat,run2.features.dat,run3.features.dat,run4.features.dat --scfile run1.scores.dat,run2.scores.dat,run3.scores.dat,run4.scores.dat --ifile run4.init.opt -n 20
+Executing: /home/thaesue/smt_se/mosesdecoder/bin/mert -d 14  --sctype BLEU --scconfig case:true --ffile run1.features.dat,run2.features.dat,run3.features.dat,run4.features.dat --scfile run1.scores.dat,run2.scores.dat,run3.scores.dat,run4.scores.dat --ifile run4.init.opt -n 20 > mert.out 2> mert.log
+Executing: \cp -f extract.err run4.extract.err
+Executing: \cp -f extract.out run4.extract.out
+Executing: \cp -f mert.out run4.mert.out
+Executing: \cp -f mert.log run4.mert.log
+Executing: touch mert.log run4.mert.log
+Executing: \cp -f weights.txt run4.weights.txt
+featlist: LexicalReordering0=0.061033 
+featlist: LexicalReordering0=-0.0298958 
+featlist: LexicalReordering0=0.10783 
+featlist: LexicalReordering0=0.0660585 
+featlist: LexicalReordering0=0.0197786 
+featlist: LexicalReordering0=0.16699 
+featlist: Distortion0=-0.0155377 
+featlist: LM0=0.0951623 
+featlist: WordPenalty0=-0.205624 
+featlist: PhrasePenalty0=0.131887 
+featlist: TranslationModel0=0.0367854 
+featlist: TranslationModel0=0.0109652 
+featlist: TranslationModel0=-0.00882503 
+featlist: TranslationModel0=0.043628 
+Saved: ./run5.moses.ini
+DECODER_CFG = -weight-overwrite 'WordPenalty0= -0.205624 LexicalReordering0= 0.061033 -0.029896 0.107830 0.066059 0.019779 0.166990 TranslationModel0= 0.036785 0.010965 -0.008825 0.043628 LM0= 0.095162 Distortion0= -0.015538 PhrasePenalty0= 0.131887'
+Executing: /home/thaesue/smt_se/mosesdecoder/bin/moses -threads 4 -v 0   -config /home/thaesue/smt_se/Data/model8/my-en/tuning/moses.filtered.ini.1 -weight-overwrite 'WordPenalty0= -0.205624 LexicalReordering0= 0.061033 -0.029896 0.107830 0.066059 0.019779 0.166990 TranslationModel0= 0.036785 0.010965 -0.008825 0.043628 LM0= 0.095162 Distortion0= -0.015538 PhrasePenalty0= 0.131887'  -n-best-list run5.best100.out 100 distinct  -input-file /home/thaesue/smt_se/Data/model8/my-en/tuning/input.tc.1 > run5.out 
+Executing: /home/thaesue/smt_se/mosesdecoder/bin/moses -threads 4 -v 0   -config /home/thaesue/smt_se/Data/model8/my-en/tuning/moses.filtered.ini.1 -weight-overwrite 'WordPenalty0= -0.205624 LexicalReordering0= 0.061033 -0.029896 0.107830 0.066059 0.019779 0.166990 TranslationModel0= 0.036785 0.010965 -0.008825 0.043628 LM0= 0.095162 Distortion0= -0.015538 PhrasePenalty0= 0.131887'  -n-best-list run5.best100.out 100 distinct  -input-file /home/thaesue/smt_se/Data/model8/my-en/tuning/input.tc.1 > run5.out
+binary file loaded, default OFF_T: -1
+binary file loaded, default OFF_T: -1
+binary file loaded, default OFF_T: -1
+binary file loaded, default OFF_T: -1
+binary file loaded, default OFF_T: -1
+Name:moses	VmPeak:146092 kB	VmRSS:80812 kB	RSSMax:81448 kB	user:50.066	sys:0.340	CPU:50.406	real:12.888
+The decoder returns the scores in this order: LexicalReordering0 LexicalReordering0 LexicalReordering0 LexicalReordering0 LexicalReordering0 LexicalReordering0 Distortion0 LM0 WordPenalty0 PhrasePenalty0 TranslationModel0 TranslationModel0 TranslationModel0 TranslationModel0
+Executing: gzip -f run5.best100.out
+Scoring the nbestlist.
+exec: /home/thaesue/smt_se/Data/model8/my-en/tuning/tmp.1/extractor.sh
+Executing: /home/thaesue/smt_se/Data/model8/my-en/tuning/tmp.1/extractor.sh > extract.out 2> extract.err
+Executing: \cp -f init.opt run5.init.opt
+exec: /home/thaesue/smt_se/mosesdecoder/bin/mert -d 14  --sctype BLEU --scconfig case:true --ffile run1.features.dat,run2.features.dat,run3.features.dat,run4.features.dat,run5.features.dat --scfile run1.scores.dat,run2.scores.dat,run3.scores.dat,run4.scores.dat,run5.scores.dat --ifile run5.init.opt -n 20
+Executing: /home/thaesue/smt_se/mosesdecoder/bin/mert -d 14  --sctype BLEU --scconfig case:true --ffile run1.features.dat,run2.features.dat,run3.features.dat,run4.features.dat,run5.features.dat --scfile run1.scores.dat,run2.scores.dat,run3.scores.dat,run4.scores.dat,run5.scores.dat --ifile run5.init.opt -n 20 > mert.out 2> mert.log
+Executing: \cp -f extract.err run5.extract.err
+Executing: \cp -f extract.out run5.extract.out
+Executing: \cp -f mert.out run5.mert.out
+Executing: \cp -f mert.log run5.mert.log
+Executing: touch mert.log run5.mert.log
+Executing: \cp -f weights.txt run5.weights.txt
+None of the weights changed more than 1e-05. Stopping.
+Executing: \cp -f init.opt run5.init.opt
+Executing: \cp -f mert.log run5.mert.log
+featlist: LexicalReordering0=0.061033 
+featlist: LexicalReordering0=-0.0298958 
+featlist: LexicalReordering0=0.10783 
+featlist: LexicalReordering0=0.0660585 
+featlist: LexicalReordering0=0.0197786 
+featlist: LexicalReordering0=0.16699 
+featlist: Distortion0=-0.0155377 
+featlist: LM0=0.0951622 
+featlist: WordPenalty0=-0.205624 
+featlist: PhrasePenalty0=0.131887 
+featlist: TranslationModel0=0.0367854 
+featlist: TranslationModel0=0.0109652 
+featlist: TranslationModel0=-0.00882502 
+featlist: TranslationModel0=0.043628 
+Saved: ./moses.ini

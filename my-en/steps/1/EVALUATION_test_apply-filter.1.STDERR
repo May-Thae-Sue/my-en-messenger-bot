@@ -1,0 +1,9 @@
+filteredPath=/home/thaesue/smt_se/Data/model8/my-en/evaluation/test.filtered.1/moses.ini 
+origPath=/home/thaesue/smt_se/Data/model8/my-en/model/moses.ini.1 
+tunedPath=/home/thaesue/smt_se/Data/model8/my-en/tuning/moses.tuned.ini.1 
+outPath=/home/thaesue/smt_se/Data/model8/my-en/evaluation/test.filtered.ini.1 
+tempPath=/tmp/moses.ini.15969 
+cmd=/home/thaesue/smt_se/mosesdecoder/scripts/ems/support/substitute-filtered-tables.perl /home/thaesue/smt_se/Data/model8/my-en/evaluation/test.filtered.1/moses.ini < /home/thaesue/smt_se/Data/model8/my-en/model/moses.ini.1 > /tmp/moses.ini.15969  
+pt:PhraseDictionaryOnDisk name=TranslationModel0 num-features=4 path=/home/thaesue/smt_se/Data/model8/my-en/evaluation/test.filtered.1/phrase-table.0-0.1.1.bin input-factor=0 output-factor=0  
+ro:LexicalReordering name=LexicalReordering0 num-features=6 type=wbe-msd-bidirectional-fe-allff input-factor=0 output-factor=0 path=/home/thaesue/smt_se/Data/model8/my-en/evaluation/test.filtered.1/reordering-table.1.wbe-msd-bidirectional-fe.0-0.1  
+cmd=/home/thaesue/smt_se/mosesdecoder/scripts/ems/support/substitute-weights.perl /tmp/moses.ini.15969 /home/thaesue/smt_se/Data/model8/my-en/tuning/moses.tuned.ini.1 /home/thaesue/smt_se/Data/model8/my-en/evaluation/test.filtered.ini.1  

@@ -1,0 +1,13 @@
+#!/bin/bash
+
+PATH="/home/thaesue/anaconda3/condabin:/home/thaesue/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin"
+cd /home/thaesue/smt_se/Data/model8/my-en
+echo 'starting at '`date`' on '`hostname`
+mkdir -p /home/thaesue/smt_se/Data/model8/my-en/truecaser
+
+mkdir -p /home/thaesue/smt_se/Data/model8/my-en/truecaser
+/home/thaesue/smt_se/mosesdecoder/scripts/recaser/train-truecaser.perl -model /home/thaesue/smt_se/Data/model8/my-en/truecaser/truecase-model.1.my -corpus /home/thaesue/smt_se/Data/model8/my-en/truecaser/corpus.1.my ; /home/thaesue/smt_se/mosesdecoder/scripts/recaser/train-truecaser.perl -model /home/thaesue/smt_se/Data/model8/my-en/truecaser/truecase-model.1.en -corpus /home/thaesue/smt_se/Data/model8/my-en/truecaser/corpus.1.en
+
+
+echo 'finished at '`date`
+touch /home/thaesue/smt_se/Data/model8/my-en/steps/1/TRUECASER_train.1.DONE

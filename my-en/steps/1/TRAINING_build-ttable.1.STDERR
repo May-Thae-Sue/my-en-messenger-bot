@@ -1,0 +1,27 @@
+Using SCRIPTS_ROOTDIR: /home/thaesue/smt_se/mosesdecoder/scripts
+using pigz 
+(6) score phrases @ Sun Aug  4 23:30:53 +0630 2019
+(6.1)  creating table half /home/thaesue/smt_se/Data/model8/my-en/model/phrase-table.1.half.f2e @ Sun Aug  4 23:30:53 +0630 2019
+/home/thaesue/smt_se/mosesdecoder/scripts/generic/score-parallel.perl 4 "sort    " /home/thaesue/smt_se/mosesdecoder/scripts/../bin/score /home/thaesue/smt_se/Data/model8/my-en/model/extract.1.sorted.gz /home/thaesue/smt_se/Data/model8/my-en/model/lex.1.f2e /home/thaesue/smt_se/Data/model8/my-en/model/phrase-table.1.half.f2e.gz  --GoodTuring  0 
+Executing: /home/thaesue/smt_se/mosesdecoder/scripts/generic/score-parallel.perl 4 "sort    " /home/thaesue/smt_se/mosesdecoder/scripts/../bin/score /home/thaesue/smt_se/Data/model8/my-en/model/extract.1.sorted.gz /home/thaesue/smt_se/Data/model8/my-en/model/lex.1.f2e /home/thaesue/smt_se/Data/model8/my-en/model/phrase-table.1.half.f2e.gz  --GoodTuring  0 
+(6.1)  creating table half /home/thaesue/smt_se/Data/model8/my-en/model/phrase-table.1.half.e2f @ Sun Aug  4 23:30:53 +0630 2019
+/home/thaesue/smt_se/mosesdecoder/scripts/generic/score-parallel.perl 4 "sort    " /home/thaesue/smt_se/mosesdecoder/scripts/../bin/score /home/thaesue/smt_se/Data/model8/my-en/model/extract.1.inv.sorted.gz /home/thaesue/smt_se/Data/model8/my-en/model/lex.1.e2f /home/thaesue/smt_se/Data/model8/my-en/model/phrase-table.1.half.e2f.gz --Inverse  1 
+Executing: /home/thaesue/smt_se/mosesdecoder/scripts/generic/score-parallel.perl 4 "sort    " /home/thaesue/smt_se/mosesdecoder/scripts/../bin/score /home/thaesue/smt_se/Data/model8/my-en/model/extract.1.inv.sorted.gz /home/thaesue/smt_se/Data/model8/my-en/model/lex.1.e2f /home/thaesue/smt_se/Data/model8/my-en/model/phrase-table.1.half.e2f.gz --Inverse  1 
+using pigz 
+Started Sun Aug  4 23:30:53 2019
+using pigz 
+Started Sun Aug  4 23:30:53 2019
+/home/thaesue/smt_se/mosesdecoder/scripts/../bin/score /home/thaesue/smt_se/Data/model8/my-en/model/tmp.14951/extract.0.gz /home/thaesue/smt_se/Data/model8/my-en/model/lex.1.f2e /home/thaesue/smt_se/Data/model8/my-en/model/tmp.14951/phrase-table.half.0000000.gz --GoodTuring  2>> /dev/stderr 
+/home/thaesue/smt_se/Data/model8/my-en/model/tmp.14951/run.3.sh/home/thaesue/smt_se/Data/model8/my-en/model/tmp.14951/run.1.sh/home/thaesue/smt_se/Data/model8/my-en/model/tmp.14951/run.0.sh/home/thaesue/smt_se/Data/model8/my-en/model/tmp.14951/run.2.sh/home/thaesue/smt_se/mosesdecoder/scripts/../bin/score /home/thaesue/smt_se/Data/model8/my-en/model/tmp.14952/extract.0.gz /home/thaesue/smt_se/Data/model8/my-en/model/lex.1.e2f /home/thaesue/smt_se/Data/model8/my-en/model/tmp.14952/phrase-table.half.0000000.gz --Inverse  2>> /dev/stderr 
+/home/thaesue/smt_se/Data/model8/my-en/model/tmp.14952/run.1.sh/home/thaesue/smt_se/Data/model8/my-en/model/tmp.14952/run.2.sh/home/thaesue/smt_se/Data/model8/my-en/model/tmp.14952/run.3.sh/home/thaesue/smt_se/Data/model8/my-en/model/tmp.14952/run.0.shmv /home/thaesue/smt_se/Data/model8/my-en/model/tmp.14951/phrase-table.half.0000000.gz /home/thaesue/smt_se/Data/model8/my-en/model/phrase-table.1.half.f2e.gzrm -rf /home/thaesue/smt_se/Data/model8/my-en/model/tmp.14951 
+Finished Sun Aug  4 23:30:54 2019
+gunzip -c /home/thaesue/smt_se/Data/model8/my-en/model/tmp.14952/phrase-table.half.*.gz 2>> /dev/stderr| LC_ALL=C sort     -T /home/thaesue/smt_se/Data/model8/my-en/model/tmp.14952  | pigz -c > /home/thaesue/smt_se/Data/model8/my-en/model/phrase-table.1.half.e2f.gz  2>> /dev/stderr rm -rf /home/thaesue/smt_se/Data/model8/my-en/model/tmp.14952 
+Finished Sun Aug  4 23:30:54 2019
+(6.6) consolidating the two halves @ Sun Aug  4 23:30:54 +0630 2019
+Executing: /home/thaesue/smt_se/mosesdecoder/scripts/../bin/consolidate /home/thaesue/smt_se/Data/model8/my-en/model/phrase-table.1.half.f2e.gz /home/thaesue/smt_se/Data/model8/my-en/model/phrase-table.1.half.e2f.gz /dev/stdout --MinScore 2:0.0001 --GoodTuring /home/thaesue/smt_se/Data/model8/my-en/model/phrase-table.1.half.f2e.gz.coc | pigz -c > /home/thaesue/smt_se/Data/model8/my-en/model/phrase-table.1.gz
+Consolidate v2.0 written by Philipp Koehn
+consolidating direct and indirect rule tables
+setting minScore2 to 0.0001
+adjusting phrase translation probabilities with Good Turing discounting
+
+Executing: rm -f /home/thaesue/smt_se/Data/model8/my-en/model/phrase-table.1.half.*

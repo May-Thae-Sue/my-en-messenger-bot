@@ -1,0 +1,13 @@
+#!/bin/bash
+
+PATH="/home/thaesue/anaconda3/condabin:/home/thaesue/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin"
+cd /home/thaesue/smt_se/Data/model8/my-en
+echo 'starting at '`date`' on '`hostname`
+mkdir -p /home/thaesue/smt_se/Data/model8/my-en/lm
+
+mkdir -p /home/thaesue/smt_se/Data/model8/my-en/lm
+/home/thaesue/smt_se/srilm/bin/i686-m64/ngram-count -order 5 -interpolate -kndiscount -unk -text /home/thaesue/smt_se/Data/model8/my-en/lm/toy.truecased.1 -lm /home/thaesue/smt_se/Data/model8/my-en/lm/toy.lm.1
+
+
+echo 'finished at '`date`
+touch /home/thaesue/smt_se/Data/model8/my-en/steps/1/LM_toy_train.1.DONE

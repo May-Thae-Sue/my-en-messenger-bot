@@ -1,0 +1,6 @@
+Using SCRIPTS_ROOTDIR: /home/thaesue/smt_se/mosesdecoder/scripts
+using pigz 
+(4) generate lexical translation table 0-0 @ Sun Aug  4 23:30:36 +0630 2019
+(/home/thaesue/smt_se/Data/model8/my-en/training/corpus.1.my,/home/thaesue/smt_se/Data/model8/my-en/training/corpus.1.en,/home/thaesue/smt_se/Data/model8/my-en/model/lex.1)
+!!!!!!!!!!!!
+Saved: /home/thaesue/smt_se/Data/model8/my-en/model/lex.1.f2e and /home/thaesue/smt_se/Data/model8/my-en/model/lex.1.e2f

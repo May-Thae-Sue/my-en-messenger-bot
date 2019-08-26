@@ -1,0 +1,3 @@
+clean-corpus.perl: processing /home/thaesue/smt_se/Data/model8/my-en/corpus/toy.tok.1.my & .en to /home/thaesue/smt_se/Data/model8/my-en/corpus/toy.clean.1, cutoff 1-80, ratio 9
+.
+Input sentences: 11901  Output sentences:  11896

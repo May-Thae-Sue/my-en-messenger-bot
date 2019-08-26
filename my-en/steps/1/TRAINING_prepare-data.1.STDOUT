@@ -1,0 +1,24 @@
+starting at နွေ ဩ 4 23:29:44 +0630 2019 on may-thae-sue
+Forking...
+
+***** 2 runs. (algorithm:TA)*****
+;KategProblem:cats: 50   words: 4305
+
+start-costs: MEAN: 753092 (747823-758361)  SIGMA:5268.84   
+  end-costs: MEAN: 680523 (680501-680544)  SIGMA:21.6572   
+   start-pp: MEAN: 63.645 (58.9667-68.3233)  SIGMA:4.67834   
+     end-pp: MEAN: 23.0197 (23.0127-23.0267)  SIGMA:0.00696785   
+ iterations: MEAN: 112849 (109670-116028)  SIGMA:3179   
+       time: MEAN: 2.4241 (2.26479-2.58342)  SIGMA:0.159315   
+
+***** 2 runs. (algorithm:TA)*****
+;KategProblem:cats: 50   words: 6094
+
+start-costs: MEAN: 870535 (869536-871533)  SIGMA:998.751   
+  end-costs: MEAN: 770492 (770443-770542)  SIGMA:49.892   
+   start-pp: MEAN: 96.8301 (95.6487-98.0115)  SIGMA:1.18138   
+     end-pp: MEAN: 28.5235 (28.5061-28.5408)  SIGMA:0.0173851   
+ iterations: MEAN: 153602 (153319-153885)  SIGMA:283   
+       time: MEAN: 3.03018 (2.80081-3.25956)  SIGMA:0.229379   
+Waiting for mkcls processes to finish...
+finished at နွေ ဩ 4 23:29:51 +0630 2019

@@ -1,0 +1,14 @@
+#!/bin/bash
+
+PATH="/home/thaesue/anaconda3/condabin:/home/thaesue/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin"
+cd /home/thaesue/smt_se/Data/model8/my-en
+echo 'starting at '`date`' on '`hostname`
+mkdir -p /home/thaesue/smt_se/Data/model8/my-en/corpus
+
+mkdir -p /home/thaesue/smt_se/Data/model8/my-en/corpus
+ln -s /home/thaesue/smt_se/Data/data8/train.my /home/thaesue/smt_se/Data/model8/my-en/corpus/toy.tok.1.my
+/home/thaesue/smt_se/mosesdecoder/scripts/tokenizer/tokenizer.perl -a -l en < /home/thaesue/smt_se/Data/data8/train.en > /home/thaesue/smt_se/Data/model8/my-en/corpus/toy.tok.1.en 
+
+
+echo 'finished at '`date`
+touch /home/thaesue/smt_se/Data/model8/my-en/steps/1/CORPUS_toy_tokenize.1.DONE

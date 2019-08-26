@@ -1,0 +1,11 @@
+#!/bin/bash
+
+PATH="/home/thaesue/anaconda3/condabin:/home/thaesue/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin"
+cd /home/thaesue/smt_se/Data/model8/my-en
+echo 'starting at '`date`' on '`hostname`
+mkdir -p /home/thaesue/smt_se/Data/model8/my-en/evaluation
+
+/home/thaesue/smt_se/mosesdecoder/scripts/ems/support/analysis.perl -system /home/thaesue/smt_se/Data/model8/my-en/evaluation/test.truecased.1 -reference /home/thaesue/smt_se/Data/model8/my-en/evaluation/test.reference.tok.1 -input /home/thaesue/smt_se/Data/model8/my-en/evaluation/test.input.tc.1 -dir /home/thaesue/smt_se/Data/model8/my-en/evaluation/test.analysis.1 -segmentation /home/thaesue/smt_se/Data/model8/my-en/evaluation/test.output.1
+
+echo 'finished at '`date`
+touch /home/thaesue/smt_se/Data/model8/my-en/steps/1/EVALUATION_test_analysis.1.DONE

@@ -1,0 +1,1 @@
+INPUT = USED /home/thaesue/smt_se/Data/model8/my-en/evaluation/test.input.tc.1 /home/thaesue/smt_se/Data/model8/my-en/training/corpus.1 /home/thaesue/smt_se/Data/model8/my-en/model/phrase-table.1

@@ -1,0 +1,2 @@
+output-truecaser = /home/thaesue/smt_se/mosesdecoder/scripts/recaser/truecase.perl [1561038277]
+INPUT = USED /home/thaesue/smt_se/Data/model8/my-en/lm/toy.tok.1 /home/thaesue/smt_se/Data/model8/my-en/truecaser/truecase-model.1

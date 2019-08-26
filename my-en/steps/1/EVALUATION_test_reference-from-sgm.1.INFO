@@ -1,0 +1,3 @@
+EVALUATION:test:reference-sgm = /home/thaesue/smt_se/Data/data8/sgm/test.en.ref.sgm [1564844607]
+INPUT = USED /home/thaesue/smt_se/Data/data8/sgm/test.en.ref.sgm /home/thaesue/smt_se/Data/data8/sgm/test.my.src.sgm
+EVALUATION:test:input-sgm = /home/thaesue/smt_se/Data/data8/sgm/test.my.src.sgm [1564844607]

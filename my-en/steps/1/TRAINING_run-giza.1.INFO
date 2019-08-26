@@ -1,0 +1,3 @@
+external-bin-dir = /home/thaesue/smt_se/tools [1561092536]
+INPUT = USED /home/thaesue/smt_se/Data/model8/my-en/training/prepared.1
+script = /home/thaesue/smt_se/mosesdecoder/scripts/training/train-model.perl [1561038277]

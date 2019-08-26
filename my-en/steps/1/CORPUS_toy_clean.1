@@ -1,0 +1,13 @@
+#!/bin/bash
+
+PATH="/home/thaesue/anaconda3/condabin:/home/thaesue/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin"
+cd /home/thaesue/smt_se/Data/model8/my-en
+echo 'starting at '`date`' on '`hostname`
+mkdir -p /home/thaesue/smt_se/Data/model8/my-en/corpus
+
+mkdir -p /home/thaesue/smt_se/Data/model8/my-en/corpus
+/home/thaesue/smt_se/mosesdecoder/scripts/training/clean-corpus-n.perl /home/thaesue/smt_se/Data/model8/my-en/corpus/toy.tok.1 my en /home/thaesue/smt_se/Data/model8/my-en/corpus/toy.clean.1 1 80 /home/thaesue/smt_se/Data/model8/my-en/corpus/toy.clean.1.lines-retained
+
+
+echo 'finished at '`date`
+touch /home/thaesue/smt_se/Data/model8/my-en/steps/1/CORPUS_toy_clean.1.DONE

@@ -1,0 +1,10 @@
+Using SCRIPTS_ROOTDIR: /home/thaesue/smt_se/mosesdecoder/scripts
+using pigz 
+(3) generate word alignment @ Sun Aug  4 23:30:29 +0630 2019
+Combining forward and inverted alignment from files:
+  /home/thaesue/smt_se/Data/model8/my-en/training/giza-inverse.1/my-en.A3.final.{bz2,gz}
+  /home/thaesue/smt_se/Data/model8/my-en/training/giza.1/en-my.A3.final.{bz2,gz}
+Executing: mkdir -p ./model
+Executing: /home/thaesue/smt_se/mosesdecoder/scripts/training/giza2bal.pl -d "pigz -cd /home/thaesue/smt_se/Data/model8/my-en/training/giza.1/en-my.A3.final.gz" -i "pigz -cd /home/thaesue/smt_se/Data/model8/my-en/training/giza-inverse.1/my-en.A3.final.gz" |/home/thaesue/smt_se/mosesdecoder/scripts/../bin/symal -alignment="grow" -diagonal="yes" -final="yes" -both="yes" > /home/thaesue/smt_se/Data/model8/my-en/model/aligned.1.grow-diag-final-and
+symal: computing grow alignment: diagonal (1) final (1)both-uncovered (1)
+skip=<0> counts=<11896>

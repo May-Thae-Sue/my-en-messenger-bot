@@ -1,0 +1,2 @@
+INPUT = USED /home/thaesue/smt_se/Data/data8/train
+output-tokenizer = /home/thaesue/smt_se/mosesdecoder/scripts/tokenizer/tokenizer.perl -a -l en [1561038277]

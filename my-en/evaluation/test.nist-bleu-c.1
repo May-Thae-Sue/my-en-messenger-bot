@@ -1,0 +1,27 @@
+MT evaluation scorer began on 2019 Aug 4 at 23:38:07
+command line:  /home/thaesue/smt_se/mosesdecoder/scripts/generic/mteval-v13a.pl -c -c -s /home/thaesue/smt_se/Data/data8/sgm/test.my.src.sgm -r /home/thaesue/smt_se/Data/data8/sgm/test.en.ref.sgm -t /home/thaesue/smt_se/Data/model8/my-en/evaluation/test.detokenized.sgm.1
+  Evaluation of any-to-en translation using:
+    src set "Myanmar-English_data" (1 docs, 1358 segs)
+    ref set "Myanmar-English_data" (1 refs)
+    tst set "Myanmar-English_data" (1 systems)
+
+length ratio: 0.987873410233659 (6680/6762), penalty (log): -0.0122754491017964
+NIST score = 6.8394  BLEU score = 0.5405 for system "Edinburgh"
+
+# ------------------------------------------------------------------------
+
+Individual N-gram scoring
+        1-gram   2-gram   3-gram   4-gram   5-gram   6-gram   7-gram   8-gram   9-gram
+        ------   ------   ------   ------   ------   ------   ------   ------   ------
+ NIST:  4.3003   1.2350   0.7824   0.4924   0.0294   0.0029   0.0000   0.0000   0.0000  "Edinburgh"
+
+ BLEU:  0.6772   0.5534   0.5179   0.4618   0.3640   0.1745   0.0830   0.0428   0.0195  "Edinburgh"
+
+# ------------------------------------------------------------------------
+Cumulative N-gram scoring
+        1-gram   2-gram   3-gram   4-gram   5-gram   6-gram   7-gram   8-gram   9-gram
+        ------   ------   ------   ------   ------   ------   ------   ------   ------
+ NIST:  4.3003   5.5353   6.3177   6.8100   6.8394   6.8423   6.8423   6.8423   6.8423  "Edinburgh"
+
+ BLEU:  0.6690   0.6047   0.5719   0.5405   0.4982   0.4174   0.3308   0.2558   0.1919  "Edinburgh"
+MT evaluation scorer ended on 2019 Aug 4 at 23:38:09

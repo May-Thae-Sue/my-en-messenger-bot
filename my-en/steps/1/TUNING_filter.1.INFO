@@ -1,0 +1,2 @@
+ttable-binarizer = /home/thaesue/smt_se/mosesdecoder/bin/CreateOnDiskPt 1 1 4 100 2 [1561376930]
+INPUT = USED /home/thaesue/smt_se/Data/model8/my-en/tuning/input.tc.1 /home/thaesue/smt_se/Data/model8/my-en/model/phrase-table.1 /home/thaesue/smt_se/Data/model8/my-en/model/reordering-table.1  

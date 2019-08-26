@@ -1,0 +1,13 @@
+#!/bin/bash
+
+PATH="/home/thaesue/anaconda3/condabin:/home/thaesue/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin"
+cd /home/thaesue/smt_se/Data/model8/my-en
+echo 'starting at '`date`' on '`hostname`
+mkdir -p /home/thaesue/smt_se/Data/model8/my-en/tuning
+
+mkdir -p /home/thaesue/smt_se/Data/model8/my-en/tuning
+/home/thaesue/smt_se/mosesdecoder/scripts/ems/support/substitute-weights.perl /home/thaesue/smt_se/Data/model8/my-en/model/moses.ini.1 /home/thaesue/smt_se/Data/model8/my-en/tuning/moses.ini.1 /home/thaesue/smt_se/Data/model8/my-en/tuning/moses.tuned.ini.1
+
+
+echo 'finished at '`date`
+touch /home/thaesue/smt_se/Data/model8/my-en/steps/1/TUNING_apply-weights.1.DONE

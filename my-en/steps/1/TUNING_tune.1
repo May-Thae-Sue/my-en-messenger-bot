@@ -1,0 +1,13 @@
+#!/bin/bash
+
+PATH="/home/thaesue/anaconda3/condabin:/home/thaesue/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin"
+cd /home/thaesue/smt_se/Data/model8/my-en
+echo 'starting at '`date`' on '`hostname`
+mkdir -p /home/thaesue/smt_se/Data/model8/my-en/tuning
+
+/home/thaesue/smt_se/mosesdecoder/scripts/training/mert-moses.pl /home/thaesue/smt_se/Data/model8/my-en/tuning/input.tc.1 /home/thaesue/smt_se/Data/model8/my-en/tuning/reference.tc.1 /home/thaesue/smt_se/mosesdecoder/bin/moses /home/thaesue/smt_se/Data/model8/my-en/tuning/moses.filtered.ini.1 --nbest 100 --working-dir /home/thaesue/smt_se/Data/model8/my-en/tuning/tmp.1 --decoder-flags "-threads 4 -v 0 " --rootdir /home/thaesue/smt_se/mosesdecoder/scripts -mertdir /home/thaesue/smt_se/mosesdecoder/bin --no-filter-phrase-table
+mkdir -p /home/thaesue/smt_se/Data/model8/my-en/tuning
+cp /home/thaesue/smt_se/Data/model8/my-en/tuning/tmp.1/moses.ini /home/thaesue/smt_se/Data/model8/my-en/tuning/moses.ini.1
+
+echo 'finished at '`date`
+touch /home/thaesue/smt_se/Data/model8/my-en/steps/1/TUNING_tune.1.DONE

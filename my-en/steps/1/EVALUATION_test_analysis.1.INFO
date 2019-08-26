@@ -1,0 +1,1 @@
+INPUT = USED /home/thaesue/smt_se/Data/model8/my-en/evaluation/test.truecased.1 /home/thaesue/smt_se/Data/model8/my-en/evaluation/test.reference.tok.1 /home/thaesue/smt_se/Data/model8/my-en/evaluation/test.input.tc.1
